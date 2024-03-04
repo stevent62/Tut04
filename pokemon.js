@@ -72,12 +72,13 @@ p.appendChild(textNode);
 p.classList.add("type");
 divElement.appendChild(p);
 
-// Add the CSS Style in Javascript 
+/**  Add the CSS Style in Javascript 
 var pokemonsDiv = document.getElementById("pokemons");
 pokemonsDiv.setAttribute("style", "display: flex; flex-wrap: wrap")
 
 var pokemonDiv = document.getElementById (pokemon_json.name);
 pokemonDiv.setAttribute("style", "border-style: solid; border-color: black; border-radius: 10px; margin: 10px; width: 150px; text-align: center");
+*/
 }
 async function fetchPokemons() {
 //TODO 1: Call API https://pokeapi.co/api/v2/pokemon?offset=20&limit=20 to fetch 
@@ -106,3 +107,7 @@ for (i = 0; i < results.length; i++){
 }
 }
 fetchPokemons()
+
+/** dd
+ * ddd
+ */
