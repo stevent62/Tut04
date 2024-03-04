@@ -12,11 +12,9 @@ function capitalizeFirstLetter(string) {
 async function fetchPokemon(url) {
 //TODO 4: Fetch the data according to the URL parameter.
 const response = await fetch(url);
-const pokemon_json = await response.json()
-console.log(pokemon_json);
+const pokemon_json = await response.json();
 //TODO 5: Obtain the div that created in TODO 2 
 let divElement = document.getElementById(pokemon_json.name);
-console.log(divElement)
 
 //TODO 6: Create the element p, set the class to pid and put the pokemon’s id 
 // inside the element and append to the div obtained in TODO 5. 
@@ -72,13 +70,6 @@ p.appendChild(textNode);
 p.classList.add("type");
 divElement.appendChild(p);
 
-/**  Add the CSS Style in Javascript 
-var pokemonsDiv = document.getElementById("pokemons");
-pokemonsDiv.setAttribute("style", "display: flex; flex-wrap: wrap")
-
-var pokemonDiv = document.getElementById (pokemon_json.name);
-pokemonDiv.setAttribute("style", "border-style: solid; border-color: black; border-radius: 10px; margin: 10px; width: 150px; text-align: center");
-*/
 }
 async function fetchPokemons() {
 //TODO 1: Call API https://pokeapi.co/api/v2/pokemon?offset=20&limit=20 to fetch 
